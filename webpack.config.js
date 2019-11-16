@@ -20,27 +20,32 @@ const cleanWebpackPlugin = require('./webpack/plugins/clean-webpack-plugin'); //
 module.exports = () => {
   const commonConfig = webpackMerge(
     setEntry({
-      index: './src/pages/index/index.js',
-      blog: './src/pages/blog/index.js'
+      index: './src/pages/index/index.js'/*,
+      blog: './src/pages/blog/index.js'*/
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/pages/index/index.html',
-      excludeChunks: ['blog']
-    }),
+      template: 'src/pages/index/index.pug',
+      // excludeChunks: ['blog']
+    }),/*
     htmlWebpackPlugin({
       filename: 'blog.html',
       template: 'src/pages/blog/index.html',
       excludeChunks: ['index']
-    }),
+    }),*/
     setOutput(),
     miniCssExtractPlugin(),
     processCss(),
-    processSassScss(),
+    processSassScss({
+      styleLoader: {
+        injectType: 'singletonStyleTag'
+      }
+    }),
     processImages(),
     processFonts(),
     processPug(),
-    processJs()
+    processJs(),
+    enableStylelint()
   );
 
   if (process.env.mode === 'development') {
