@@ -1,4 +1,10 @@
+@import '../../sass/utils';
+
 .page-header {
-  background-color: #fff;
   padding: 13px 0;
+  background-color: #fff;
+
+  @include for-tablet-landscape-down() {
+    margin: 0 10px;
+  }
 }

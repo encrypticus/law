@@ -45,7 +45,8 @@ module.exports = () => {
     processFonts(),
     processPug(),
     processJs(),
-    enableStylelint()
+    enableStylelint(),
+    cleanWebpackPlugin()
   );
 
   if (process.env.mode === 'development') {
@@ -59,8 +60,7 @@ module.exports = () => {
   if (process.env.mode === 'production') {
     return webpackMerge(
       commonConfig,
-      addOptimization(),
-      cleanWebpackPlugin()
+      addOptimization()
     );
   }
 };
