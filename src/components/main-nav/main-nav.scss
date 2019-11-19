@@ -12,7 +12,8 @@
     color: #0d2e69;
 
     @include for-phone-landscape-down() {
-      position: absolute;
+      position: fixed;
+      top: 0;
       right: 0;
       padding: 20px 10px 50px 30px;
       transform: translateX(275px);
