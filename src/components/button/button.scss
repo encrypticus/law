@@ -1,0 +1,32 @@
+@import '../../sass/utils';
+
+.button {
+  display: inline-block;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: background-color .3s;
+
+  &_theme_blue {
+    padding: pxToRem(10) pxToRem(31) pxToRem(10) pxToRem(25);
+    font-size: 11px;
+    line-height: 19.21px;
+    color: #fff;
+    background-color: #0d2e69;
+  }
+
+  &_theme_white {
+    padding: pxToRem(10) pxToRem(67);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21.49px;
+    color: #0d2e69;
+    background-color: #fff;
+  }
+}

@@ -8,9 +8,15 @@
 .inner-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 824px;
   margin: auto;
+
+  &_contacts {
+    @include for-tablet-landscape-down() {
+      justify-content: center;
+    }
+  }
 }
 
 html {
@@ -20,11 +26,14 @@ html {
   @include for-phone-landscape-down() {
     font-size: 14px;
   }
+
+  @include for-phone-only() {
+    font-size: 12px;
+  }
 }
 
 body {
   position: relative;
-  height: 10000px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;

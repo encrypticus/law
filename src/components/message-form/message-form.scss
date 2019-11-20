@@ -1,0 +1,62 @@
+@import '../../sass/utils';
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: pxToRem(21) pxToRem(23) pxToRem(31) pxToRem(21);
+  background-color: #0d2e69;
+
+  &__title {
+    margin: 0;
+    font-size: pxToRem(20);
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 34.23px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__sub-title {
+    font-size: 12px;
+    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21.49px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: pxToRem(24);
+  }
+
+  &__field,
+  &__textarea {
+    width: 267px;
+    padding: pxToRem(5) 0 pxToRem(5) pxToRem(9);
+    font-size: 12px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21.49px;
+    color: #fff;
+    background-color: #0d2e69;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: pxToRem(9);
+  }
+
+  &__textarea {
+    height: 87px;
+    margin-bottom: pxToRem(11);
+    resize: none;
+  }
+
+  &__field::placeholder,
+  &__textarea::placeholder {
+    font-size: 11px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21.49px;
+    color: #fff;
+    opacity: .53;
+  }
+}

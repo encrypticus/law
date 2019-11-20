@@ -1,0 +1,15 @@
+mixin message-form()
+  form.message-form(href='./')
+    p.message-form__title FIND OUT IF YOU HAVE A CASE
+    p.message-form__sub-title Fill out the form below for your free case evaluation.
+    +message-form-field('text', 'First name', 'first-name')
+    +message-form-field('email', 'Email Address', 'email')
+    +message-form-field('tel', 'Phone', 'phone')
+    +message-form-textarea('Message', 'message')
+    +button('submit', 'theme_white')
+
+mixin message-form-field(type, placeholder, name)
+  input.message-form__field(type=type, name=name, placeholder=placeholder)
+
+mixin message-form-textarea(placeholder, name)
+  textarea.message-form__textarea(name=name, placeholder=placeholder)

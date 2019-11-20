@@ -8,8 +8,8 @@
   }
 
   &__wrapper {
-    background-color: #fff;
     color: #0d2e69;
+    background-color: #fff;
 
     @include for-phone-landscape-down() {
       position: fixed;
@@ -17,8 +17,8 @@
       right: 0;
       padding: 20px 10px 50px 30px;
       transform: translateX(275px);
-      background-color: #0d2e69;
       color: #fff;
+      background-color: #0d2e69;
     }
 
     &_opened {

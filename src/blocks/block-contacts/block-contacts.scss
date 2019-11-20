@@ -1,0 +1,51 @@
+@import '../../sass/utils';
+
+.block-contacts {
+  height: 616px;
+  background-image: url(./img/bg.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: pxToRem(117);
+    background-color: rgba(0, 0, 0, .7);
+
+    @include for-tablet-landscape-down() {
+      padding-top: pxToRem(50);
+    }
+  }
+
+  &__text {
+    padding-top: pxToRem(115);
+
+    @include for-tablet-landscape-down() {
+      padding-top: 0;
+      margin-bottom: pxToRem(40);
+      text-align: center;
+    }
+  }
+
+  &__slogan-1,
+  &__slogan-2 {
+    margin: 0;
+    font-size: pxToRem(21);
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 21.35px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__slogan-1 {
+    margin-bottom: pxToRem(14);
+  }
+
+  &__slogan-2 {
+    font-size: pxToRem(36);
+    line-height: 19.21px;
+    margin-bottom: pxToRem(38);
+  }
+}

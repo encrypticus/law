@@ -1,4 +1,5 @@
 module.exports = {
+  extends: 'stylelint-config-airbnb',
   plugins: [
     'stylelint-order'
   ],
@@ -35,7 +36,8 @@ module.exports = {
       },
     ],
     'color-hex-length': 'short',
-    'string-quotes': 'single'
+    'string-quotes': 'single',
+    'max-nesting-depth': 4
   }
 };
 
