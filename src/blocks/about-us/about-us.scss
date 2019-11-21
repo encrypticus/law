@@ -1,0 +1,58 @@
+@import '../../sass/utils';
+
+.about-us {
+
+  &__img {
+    width: pxToPercent(400, 824);
+  }
+
+  img {
+    max-width: 400px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info {
+    padding-top: 2px;
+
+    @include for-phone-only() {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: pxToRem(36);
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 19.21px;
+    color: #404040;
+    margin-top: 0;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 39px;
+    font-size: 13px;
+    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 18.79px;
+    color: #151515;
+    max-width: 399px;
+  }
+
+  &__consultation {
+    margin-top: 0;
+    font-size: 15px;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 19.21px;
+    color: #404040;
+    text-transform: uppercase;
+  }
+}

@@ -29,4 +29,9 @@
     color: #0d2e69;
     background-color: #fff;
   }
+
+  &_about-us {
+    padding-left: pxToRem(40);
+    padding-right: pxToRem(40);
+  }
 }

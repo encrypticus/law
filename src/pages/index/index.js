@@ -8,3 +8,4 @@ import '../../components/burger/burger';
 import '../../blocks/block-contacts/block-contacts';
 import '../../components/button/button';
 import '../../components/message-form/message-form';
+import '../../blocks/about-us/about-us';
