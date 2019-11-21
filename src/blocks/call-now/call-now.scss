@@ -1,0 +1,30 @@
+@import '../../sass/utils';
+
+.call-now {
+  display: flex;
+  padding: pxToRem(39) 0;
+  background-color: #0d2e69;
+  flex-direction: column;
+  align-items: center;
+
+  &__text,
+  &__tel {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 48.38px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: pxToRem(26);
+    text-align: center;
+  }
+
+  &__tel {
+    font-size: pxToRem(33);
+    text-decoration: none;
+    line-height: 35px;
+  }
+}

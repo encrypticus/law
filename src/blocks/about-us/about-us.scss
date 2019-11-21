@@ -1,6 +1,7 @@
 @import '../../sass/utils';
 
 .about-us {
+  margin-bottom: pxToRem(42);
 
   &__img {
     width: pxToPercent(400, 824);
