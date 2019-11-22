@@ -10,3 +10,4 @@ import '../../components/button/button';
 import '../../components/message-form/message-form';
 import '../../blocks/about-us/about-us';
 import '../../blocks/call-now/call-now';
+import '../../blocks/testimonials/testimonials';
