@@ -1,0 +1,96 @@
+@import '../../../sass/utils';
+
+.index-page-footer {
+
+  &__top {
+    display: flex;
+    background-color: #2b2b2b;
+    padding-top: 49px;
+    padding-bottom: 57px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bottom {
+    background-color: #242424;
+    padding-top: 13px;
+    padding-bottom: 14px;
+
+    @media (max-width: 860px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__title {
+    height: 44px;
+    font-size: 16px;
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+
+    @include for-phone-landscape-down() {
+      flex-direction: column;
+    }
+
+    &_top {
+      margin-top: -10px;
+    }
+  }
+
+  &__item {
+    @include for-phone-landscape-down() {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    padding: 0 12px;
+    border-right: 1px solid #fff;
+    font-size: 11px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 11px;
+    color: #fff;
+    text-decoration: none;
+
+    @include for-phone-landscape-down() {
+      padding: 0;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      border: 0;
+    }
+
+    &_first {
+      padding-left: 0;
+    }
+
+    &_last {
+      border: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 19.21px;
+    color: #fff;
+  }
+}

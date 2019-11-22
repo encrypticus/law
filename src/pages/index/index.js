@@ -13,3 +13,4 @@ import '../../blocks/call-now/call-now';
 import '../../blocks/testimonials/testimonials';
 import '../../blocks/news-and-articles/news-and-articles';
 import '../../components/article/article.scss';
+import '../../blocks/footers/index/footer';

@@ -1,4 +1,7 @@
+@import '../../sass/utils';
+
 .news-and-articles {
+  margin-bottom: pxToRem(46);
 
   &__title {
     margin-bottom: pxToRem(62);
