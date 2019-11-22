@@ -1,0 +1,14 @@
+.news-and-articles {
+
+  &__title {
+    margin-bottom: pxToRem(62);
+    font-size: pxToRem(36);
+    font-family: 'Playfair Display', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 19.21px;
+    color: #404040;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}

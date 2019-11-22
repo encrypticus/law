@@ -30,6 +30,12 @@
       padding: 0 10px;
     }
   }
+
+  &_articles {
+    @media (max-width: 844px) {
+      padding: 0 10px;
+    }
+  }
 }
 
 html {

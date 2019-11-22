@@ -7,6 +7,10 @@
   background-size: auto;
   background-repeat: no-repeat;
 
+  @include for-phone-only() {
+    margin-bottom: 30px;
+  }
+
   &__overlay {
     width: 100%;
     height: 100%;

@@ -5,6 +5,10 @@
 
   &__img {
     width: pxToPercent(400, 824);
+
+    @include for-phone-only() {
+      width: auto;
+    }
   }
 
   img {

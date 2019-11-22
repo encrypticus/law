@@ -11,3 +11,5 @@ import '../../components/message-form/message-form';
 import '../../blocks/about-us/about-us';
 import '../../blocks/call-now/call-now';
 import '../../blocks/testimonials/testimonials';
+import '../../blocks/news-and-articles/news-and-articles';
+import '../../components/article/article.scss';
