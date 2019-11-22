@@ -3,9 +3,12 @@
 .article {
   width: pxToRem(258);
 
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+  }
+
   @include for-phone-only() {
     width: 100%;
-    margin-bottom: 50px;
   }
 
   &__img {
