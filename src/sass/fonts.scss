@@ -5,7 +5,7 @@
   font-weight: 400;
   src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Roboto'), local('Roboto-Regular'),
-    url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'),
     url('../fonts/roboto-v20-latin-regular.woff') format('woff'),
     url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'),
@@ -19,7 +19,7 @@
   font-weight: 500;
   src: url('../fonts/roboto-v20-latin-500.eot'); /* IE9 Compat Modes */
   src: local('Roboto Medium'), local('Roboto-Medium'),
-    url('../fonts/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-v20-latin-500.woff2') format('woff2'),
     url('../fonts/roboto-v20-latin-500.woff') format('woff'),
     url('../fonts/roboto-v20-latin-500.ttf') format('truetype'),
@@ -33,7 +33,7 @@
   font-weight: 700;
   src: url('../fonts/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Roboto Bold'), local('Roboto-Bold'),
-    url('../fonts/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-v20-latin-700.woff2') format('woff2'),
     url('../fonts/roboto-v20-latin-700.woff') format('woff'),
     url('../fonts/roboto-v20-latin-700.ttf') format('truetype'),
@@ -47,9 +47,45 @@
   font-weight: 700;
   src: url('../fonts/playfair-display-v15-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
-    url('../fonts/playfair-display-v15-latin-700.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/playfair-display-v15-latin-700.eot?#iefix') format('embedded-opentype'),
     url('../fonts/playfair-display-v15-latin-700.woff2') format('woff2'),
     url('../fonts/playfair-display-v15-latin-700.woff') format('woff'),
     url('../fonts/playfair-display-v15-latin-700.ttf') format('truetype'),
     url('../fonts/playfair-display-v15-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/open-sans-v17-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-latin-regular.woff') format('woff'),
+    url('../fonts/open-sans-v17-latin-regular.ttf') format('truetype'),
+    url('../fonts/open-sans-v17-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v17-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+    url('../fonts/open-sans-v17-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
+    url('../fonts/open-sans-v17-latin-700.woff') format('woff'),
+    url('../fonts/open-sans-v17-latin-700.ttf') format('truetype'),
+    url('../fonts/open-sans-v17-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-semibold.woff') format('woff'),
+    url('../fonts/open-sans-semibold.ttf') format('truetype');
 }

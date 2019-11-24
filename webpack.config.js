@@ -20,19 +20,19 @@ const cleanWebpackPlugin = require('./webpack/plugins/clean-webpack-plugin'); //
 module.exports = () => {
   const commonConfig = webpackMerge(
     setEntry({
-      index: './src/pages/index/index.js'/*,
-      blog: './src/pages/blog/index.js'*/
+      index: './src/pages/index/index.js',
+      'about-us' : './src/pages/about-us/index.js'
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/pages/index/index.pug',
-      // excludeChunks: ['blog']
-    }),/*
+      excludeChunks: ['about-us']
+    }),
     htmlWebpackPlugin({
-      filename: 'blog.html',
-      template: 'src/pages/blog/index.html',
+      filename: 'about-us.html',
+      template: 'src/pages/about-us/index.pug',
       excludeChunks: ['index']
-    }),*/
+    }),
     setOutput(),
     miniCssExtractPlugin(),
     processCss(),

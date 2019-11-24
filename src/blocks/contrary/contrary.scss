@@ -1,0 +1,91 @@
+@import '../../sass/utils';
+
+.contrary {
+  padding-top: pxToRem(134);
+  padding-bottom: pxToRem(112);
+  padding-left: 267px;
+  background-image: url(img/contrary.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @include for-laptop-down() {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include for-phone-only() {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .4;
+  }
+
+  &__inner {
+    @include for-phone-only() {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: pxToRem(16);
+    font-size: pxToRem(29);
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: pxToRem(29);
+    color: #fff;
+    text-transform: uppercase;
+
+    @include for-phone-only() {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    max-width: 410px;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: pxToRem(23);
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 18.67px;
+    color: #fff;
+
+    @include for-phone-only() {
+      text-align: center;
+    }
+  }
+
+  &__button-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__button {
+    padding: pxToRem(14) pxToRem(24) pxToRem(15) pxToRem(25);
+    font-size: pxToRem(18);
+    font-family: 'Open Sans Semibold', Arial, sans-serif;
+    font-weight: 400;
+    line-height: pxToRem(18.67);
+    color: #000;
+    text-transform: unset;
+  }
+}
