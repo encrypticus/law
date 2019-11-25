@@ -1,0 +1,90 @@
+@import '../../sass/utils';
+
+.femida {
+  padding: 0 10px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 833px;
+    margin: auto;
+    color: #000;
+
+    @include for-phone-landscape-down() {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: pxToRem(18);
+    font-size: pxToRem(19);
+    font-family: 'Open Sans Semibold', Arial, sans-serif;
+    font-weight: 400;
+    line-height: pxToRem(20.82);
+    text-transform: uppercase;
+
+    @include for-phone-landscape-down() {
+      text-align: center;
+    }
+  }
+
+  &__col-left,
+  &__col-right {
+    margin-top: 0;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 17.23px;
+  }
+
+  &__col-left {
+    width: pxToPercent(406, 833);
+    order: 0;
+
+    @include for-phone-landscape-down() {
+      order: 1;
+      width: 90%;
+    }
+
+    @include for-phone-only() {
+      width: 100%;
+    }
+  }
+
+  &__col-right {
+    width: pxToPercent(409, 833);
+    order: 0;
+
+    @include for-phone-landscape-down() {
+      width: 70%;
+    }
+
+    @include for-phone-only() {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: pxToRem(18);
+  }
+
+  &__text-2 {
+    margin-top: 0;
+    margin-bottom: pxToRem(52);
+  }
+
+  &__link {
+    display: inline-block;
+    padding: pxToRem(10) pxToRem(20);
+    font-size: 14px;
+    font-family: 'Open Sans Semibold', Arial, sans-serif;
+    line-height: 20.82px;
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+}
