@@ -7,4 +7,6 @@ import '../../components/contact/contact';
 import '../../components/burger/burger';
 import '../../blocks/contrary/contrary';
 import '../../components/button/button';
-import '../../blocks/femida/femida.js';
+import '../../blocks/femida/femida';
+import '../../blocks/latest/latest';
+import '../../components/card/card';
