@@ -21,17 +21,23 @@ module.exports = () => {
   const commonConfig = webpackMerge(
     setEntry({
       index: './src/pages/index/index.js',
-      'about-us' : './src/pages/about-us/index.js'
+      'about-us' : './src/pages/about-us/index.js',
+      cases: './src/pages/cases/index.js'
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/pages/index/index.pug',
-      excludeChunks: ['about-us']
+      excludeChunks: ['about-us', 'cases']
     }),
     htmlWebpackPlugin({
       filename: 'about-us.html',
       template: 'src/pages/about-us/index.pug',
-      excludeChunks: ['index']
+      excludeChunks: ['index', 'cases']
+    }),
+    htmlWebpackPlugin({
+      filename: 'cases.html',
+      template: 'src/pages/cases/index.pug',
+      excludeChunks: ['index', 'about-us']
     }),
     setOutput(),
     miniCssExtractPlugin(),
