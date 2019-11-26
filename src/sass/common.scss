@@ -36,6 +36,12 @@
       padding: 0 10px;
     }
   }
+
+  &_footer {
+    @include for-small-phone-only() {
+      justify-content: center;
+    }
+  }
 }
 
 html {

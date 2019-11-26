@@ -55,6 +55,10 @@
     @include for-phone-landscape-down() {
       margin-bottom: 10px;
     }
+
+    @include for-small-phone-only() {
+      text-align: center;
+    }
   }
 
   &__link {
