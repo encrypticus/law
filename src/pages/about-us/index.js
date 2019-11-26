@@ -10,3 +10,4 @@ import '../../components/button/button';
 import '../../blocks/femida/femida';
 import '../../blocks/latest/latest';
 import '../../components/card/card';
+import '../../blocks/footers/about-us/footer';

@@ -1,0 +1,132 @@
+@import '../../../sass/utils';
+
+.about-page-footer {
+
+  &__top {
+    background-color: #fff;
+    padding-top: 51px;
+    padding-bottom: 55px;
+
+    @include for-tablet-landscape-down() {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__bottom {
+    padding: 19px 0;
+    background-color: #004166;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 756px;
+
+    @include for-phone-only() {
+      flex-direction: column;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-phone-only() {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    height: 34px;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 19.39px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 229px;
+    transform: translateX(-19px);
+
+    @media (max-width: 820px) {
+      transform: none;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 19.39px;
+    text-decoration: none;
+    color: #000;
+    transform: translateX(-34px);
+
+    @media (max-width: 820px) {
+      transform: none;
+    }
+
+    &_email {
+      transform: translateX(-17px);
+
+      @include for-phone-landscape-down() {
+        transform: none;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    display: block;
+
+    &_location {
+      width: 18px;
+      height: 24px;
+      margin-bottom: 15px;
+      transform: translate(-15px, 1px);
+
+      @media (max-width: 820px) {
+        transform: none;
+      }
+    }
+
+    &_phone {
+      width: 21px;
+      height: 21px;
+      margin-bottom: 18px;
+      transform: translate(-31px, 2px);
+
+      @media (max-width: 820px) {
+        transform: none;
+      }
+    }
+
+    &_email {
+      width: 26px;
+      height: 18px;
+      margin-bottom: 22px;
+      transform: translate(-18px, 5px);
+
+      @include for-phone-only() {
+        transform: none;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 20.82px;
+    color: #fff;
+    text-align: center;
+  }
+}
