@@ -1,0 +1,25 @@
+@import '../../sass/utils';
+
+.button-orange {
+  display: inline-block;
+  padding: pxToRem(12) pxToRem(50);
+  font-size: 14px;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 25.13px;
+  color: #fff;
+  background-color: #f4762a;
+  text-decoration: none;
+  box-sizing: border-box;
+
+  @include for-phone-landscape-down() {
+    min-width: 170px;
+    text-align: center;
+  }
+
+  &_theme_white {
+    color: #f4762a;
+    background-color: #fff;
+    border: 1px solid #f4762a;
+  }
+}

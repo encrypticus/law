@@ -1,0 +1,23 @@
+mixin button-orange(text, mods, isInput)
+  -
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' button-orange_' + modsList[i].trim();
+      }
+    }
+
+  //- передан href — это ссылка
+  if (attributes.href)
+    a.button-orange(class=allMods)&attributes(attributes)!= text
+    block
+
+  //- иначе, если передан isInput и он true, это input
+  else if (typeof(isInput) !== 'undefined' && isInput)
+    input.button-orange(class=allMods, value=text, type='button')&attributes(attributes)
+
+  //- иначе это button
+  else
+    button.button-orange(class=allMods)&attributes(attributes)!= text
+    block

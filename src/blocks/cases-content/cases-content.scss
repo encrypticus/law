@@ -5,12 +5,14 @@
   grid-template-areas: 'img img'
     'schedule post';
   grid-template-columns: 1fr 1fr;
+  margin-bottom: pxToRem(60);
 
   @include for-phone-landscape-down() {
     grid-template-areas: 'img'
       'schedule'
       'post';
     grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 
   &__img {
@@ -28,7 +30,7 @@
   }
 
   &__schedule-form {
-    padding: 41px 0 39px pxToPercent(114, 683);
+    padding: 41px 0 60px pxToPercent(114, 683);
     background-color: #f4762a;
     grid-area: schedule;
     box-sizing: border-box;

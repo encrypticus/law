@@ -7,3 +7,5 @@ import '../../components/contact/contact';
 import '../../components/burger/burger';
 import '../../blocks/cases-content/cases-content';
 import '../../components/schedule-form/schedule-form';
+import '../../blocks/cases-about-us/cases-about-us.scss';
+import '../../components/button-orange/button-orange';
