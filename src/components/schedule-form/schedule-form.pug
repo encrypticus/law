@@ -1,0 +1,7 @@
+mixin schedule-form()
+  form.schedule-form(action='./')
+    input.schedule-form__input(name='first-name', type='text', placeholder='Your name')
+    input.schedule-form__input(name='phone', type='tel', pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}', placeholder='Phone')
+    input.schedule-form__input(name='email', type='email', placeholder='Your e-mail')
+    input.schedule-form__input(name='location', type='text', placeholder='Location')
+    input.schedule-form__button(type='submit', name='submit', value='submit')
