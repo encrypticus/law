@@ -22,22 +22,28 @@ module.exports = () => {
     setEntry({
       index: './src/pages/index/index.js',
       'about-us' : './src/pages/about-us/index.js',
-      cases: './src/pages/cases/index.js'
+      cases: './src/pages/cases/index.js',
+      faq: './src/pages/faq/index.js'
     }),
     htmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/pages/index/index.pug',
-      excludeChunks: ['about-us', 'cases']
+      excludeChunks: ['about-us', 'cases', 'faq']
     }),
     htmlWebpackPlugin({
       filename: 'about-us.html',
       template: 'src/pages/about-us/index.pug',
-      excludeChunks: ['index', 'cases']
+      excludeChunks: ['index', 'cases', 'faq']
     }),
     htmlWebpackPlugin({
       filename: 'cases.html',
       template: 'src/pages/cases/index.pug',
-      excludeChunks: ['index', 'about-us']
+      excludeChunks: ['index', 'about-us', 'faq']
+    }),
+    htmlWebpackPlugin({
+      filename: 'faq.html',
+      template: 'src/pages/faq/index.pug',
+      excludeChunks: ['index', 'about-us', 'cases']
     }),
     setOutput(),
     miniCssExtractPlugin(),
