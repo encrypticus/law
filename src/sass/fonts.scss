@@ -132,6 +132,7 @@
     url('../fonts/lato-v16-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
 }
 
+/* lato-black - latin */
 @font-face {
   font-family: 'Lato Black';
   font-style: normal;
@@ -141,4 +142,28 @@
     url('../fonts/Lato-Black.woff') format('woff'),
     url('../fonts/Lato-Black.ttf') format('truetype'),
     url('../fonts/Lato-Black.svg#Lato-Black') format('svg');
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-regular.eot');
+  src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato-regular.woff') format('woff'),
+    url('../fonts/lato-regular.ttf') format('truetype'),
+    url('../fonts/lato-regular.svg#Lato-Black') format('svg');
+}
+
+/* lato-bold - latin */
+@font-face {
+  font-family: 'Lato Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-bold.eot');
+  src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lato-bold.woff') format('woff'),
+    url('../fonts/lato-bold.ttf') format('truetype'),
+    url('../fonts/lato-bold.svg#Lato-Black') format('svg');
 }

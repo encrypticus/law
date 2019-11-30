@@ -1,6 +1,7 @@
 @import '../../sass/utils';
 
 .services {
+  margin-bottom: pxToRem(102);
 
   &__list {
     display: grid;
@@ -15,7 +16,7 @@
   }
 
   &__list-item {
-    padding: 41px pxToRem(50) pxToRem(37) 22px;
+    padding: 41px pxToRem(50) pxToRem(29) 22px;
     background-color: #f7f3f4;
 
     @include for-tablet-landscape-down() {

@@ -1,0 +1,119 @@
+@import '../../sass/utils';
+
+.complete-form {
+  padding-bottom: 118px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  &__title {
+    font-size: pxToRem(23);
+    font-family: 'Lato Regular', Arial, sans-serif;
+    font-weight: 400;
+    line-height: 25.84px;
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: pxToRem(53);
+    text-transform: uppercase;
+    transform: translateX(-7px);
+
+    @include for-tablet-landscape-down() {
+      transform: none;
+    }
+
+    span {
+      font-family: 'Lato Bold', Arial, sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &__form {
+    display: grid;
+    margin: auto;
+    transform: translateX(-7px);
+    max-width: 646px;
+    grid-column-gap: 10px;
+    grid-row-gap: 12px;
+    grid-template-areas: 'name phone'
+      'email email'
+      'message message'
+      'btn btn';
+
+    @include for-tablet-landscape-down() {
+      transform: none;
+    }
+
+    @include for-phone-landscape-down() {
+      grid-template-areas: 'name'
+        'phone'
+        'email'
+        'message'
+        'btn';
+    }
+  }
+
+  &__name,
+  &__phone,
+  &__email,
+  &__message {
+    padding: 9px 0 9px 15px;
+    font-size: 12px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 12px;
+    color: #000;
+    border: 1px solid #cbcbcb;
+    text-transform: uppercase;
+
+    &::placeholder {
+      font-size: 12px;
+      font-family: Lato, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 12px;
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
+
+  &__name {
+    grid-area: name;
+  }
+
+  &__phone {
+    grid-area: phone;
+  }
+
+  &__email {
+    grid-area: email;
+  }
+
+  &__message {
+    grid-area: message;
+    min-height: 98px;
+    box-sizing: border-box;
+  }
+
+  &__button {
+    padding: 8px 34px;
+    font-size: 14px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 17.23px;
+    color: #fff;
+    background-color: #1d75b7;
+    border: 0;
+    grid-area: btn;
+    justify-self: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: lighten(#1d75b7, 5%);
+    }
+
+    &:active {
+      background-color: darken(#1d75b7, 5%);
+    }
+  }
+}
