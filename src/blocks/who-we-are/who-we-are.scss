@@ -1,0 +1,77 @@
+@import '../../sass/utils';
+
+.who-we-are {
+  display: grid;
+  margin: auto;
+  max-width: 816px;
+  grid-template-columns: minmax(300px, 394px) minmax(300px, 386px);
+  grid-column-gap: 36px;
+
+  @media (max-width: 816px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column-gap: 15px;
+  }
+
+  @include for-phone-landscape-down() {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
+
+  &__img {
+
+  }
+
+  &__description {
+    padding-top: pxToRem(60);
+
+    @include for-tablet-landscape-down() {
+      padding-top: 0;
+    }
+  }
+
+  &__text {
+    font-size: 11px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 16.51px;
+    color: #5f5f5f;
+    margin-top: 0;
+    margin-bottom: pxToRem(29);
+
+    @include for-phone-only() {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+  }
+
+  &__title {
+    font-size: pxToRem(22);
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: pxToRem(27.28px);
+    color: #000;
+    margin-top: 0;
+    margin-bottom: pxToRem(37);
+    text-transform: uppercase;
+
+    @include for-phone-only() {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    font-size: 11px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 27.28px;
+    color: #1d75b7;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

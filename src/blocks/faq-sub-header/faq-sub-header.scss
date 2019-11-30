@@ -2,11 +2,13 @@
 
 .faq-sub-header {
   min-height: 628px;
+  box-sizing: border-box;
   background-image: url(./img/sub-header-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
   padding-top: pxToRem(215);
+  margin-bottom: 57px;
 
   @include for-phone-landscape-down() {
     min-height: auto;
