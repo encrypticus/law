@@ -5,6 +5,10 @@
   padding-right: 10px;
   padding-left: 10px;
 
+  @include for-phone-landscape-down() {
+    padding-bottom: 50px;
+  }
+
   &__title {
     font-size: pxToRem(23);
     font-family: 'Lato Regular', Arial, sans-serif;

@@ -9,3 +9,4 @@ import '../../blocks/faq-sub-header/faq-sub-header';
 import '../../blocks/who-we-are/who-we-are';
 import '../../blocks/services/services';
 import '../../blocks/complete-form/complete-form';
+import '../../blocks/footers/faq/index';

@@ -1,0 +1,226 @@
+@import '../../../sass/utils';
+
+.faq-footer {
+  padding: 65px 0 24px 0;
+  background-color: #1c1c1c;
+
+  &__top {
+    margin-bottom: 84px;
+
+    @include for-tablet-landscape-down() {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__bottom {
+    max-width: 841px;
+    margin: auto;
+    border-top: 1px solid #fff;
+  }
+
+  &__list {
+    display: flex;
+    margin: 0;
+    margin-left: pxToPercent(273, 1366);
+    padding: 0;
+    max-width: 687px;
+    list-style: none;
+
+    @include for-laptop-down() {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include for-tablet-landscape-down() {
+      justify-content: space-between;
+    }
+
+    @include for-phone-only() {
+      display: block;
+    }
+  }
+
+  &__lsit-item {
+    @include for-phone-only() {
+      text-align: center;
+    }
+  }
+
+  &__list-item:nth-child(1) {
+    width: 296px;
+
+    @include for-phone-landscape-down() {
+      width: 40%;
+    }
+
+    @include for-phone-only() {
+      width: auto;
+    }
+  }
+
+  &__list-item:nth-child(2) {
+    width: 131px;
+    margin-left: 62px;
+
+    @include for-tablet-landscape-down() {
+      margin-left: 0;
+    }
+
+    @include for-phone-landscape-down() {
+      width: auto;
+    }
+
+    @include for-phone-only() {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list-item:nth-child(3) {
+    width: 106px;
+    margin-left: 98px;
+
+    @include for-tablet-landscape-down() {
+      margin-left: 0;
+    }
+
+    @include for-phone-landscape-down() {
+      width: auto;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 98px;
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 15.07px;
+    color: #fff;
+    border: 1px solid #fff;
+    opacity: .5;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .68px;
+
+    @include for-phone-only() {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 17.23px;
+    color: #fff;
+
+    @include for-phone-only() {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 21.54px;
+    color: #fff;
+    text-decoration: none;
+
+    @include for-phone-only() {
+      text-align: center;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_phone {
+      padding-left: 18px;
+      margin-bottom: 10px;
+
+      @include for-phone-only() {
+        padding-left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 7px;
+        height: 14px;
+        background-image: url(./img/phone_icon.png);
+
+        @include for-phone-only() {
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+
+    &_email {
+      padding-left: 18px;
+
+      @include for-phone-only() {
+        padding-left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 2px;
+        width: 11px;
+        height: 7px;
+        background-image: url(./img/mail_icon.png);
+
+        @include for-phone-only() {
+          width: 0;
+          height: 0;
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-size: 19px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 34px;
+    color: #fff;
+    letter-spacing: .52px;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    @include for-phone-only() {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 11px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 18.63px;
+    color: #fff;
+    text-align: center;
+    opacity: .7;
+    letter-spacing: .3px;
+  }
+}
