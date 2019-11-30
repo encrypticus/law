@@ -3,6 +3,7 @@
 .who-we-are {
   display: grid;
   margin: auto;
+  padding-bottom: pxToRem(57);
   max-width: 816px;
   grid-template-columns: minmax(300px, 394px) minmax(300px, 386px);
   grid-column-gap: 36px;
@@ -28,6 +29,10 @@
     @include for-tablet-landscape-down() {
       padding-top: 0;
     }
+
+    @include for-phone-landscape-down() {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -39,9 +44,10 @@
     margin-top: 0;
     margin-bottom: pxToRem(29);
 
-    @include for-phone-only() {
+    @include for-phone-landscape-down() {
       margin-bottom: 10px;
       font-size: 13px;
+      text-align: center;
     }
   }
 
@@ -55,7 +61,7 @@
     margin-bottom: pxToRem(37);
     text-transform: uppercase;
 
-    @include for-phone-only() {
+    @include for-phone-landscape-down() {
       text-align: center;
       margin-bottom: 20px;
     }

@@ -1,0 +1,113 @@
+@import '../../sass/utils';
+
+.services {
+
+  &__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include for-tablet-landscape-down() {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__list-item {
+    padding: 41px pxToRem(50) pxToRem(37) 22px;
+    background-color: #f7f3f4;
+
+    @include for-tablet-landscape-down() {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+
+    &_theme_dark {
+      position: relative;
+      background-image: url(./img/services.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-left: 40px;
+      padding-right: 34px;
+
+      @include for-tablet-landscape-down() {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .75);
+      }
+    }
+  }
+
+  &__item-title {
+    margin-top: 0;
+    font-size: pxToRem(22);
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 27.28px;
+    color: #000;
+    text-transform: uppercase;
+
+    @include for-tablet-landscape-down() {
+      text-align: center;
+    }
+  }
+
+  &__list-item_theme_dark &__item-title,
+  &__list-item_theme_dark &__item-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  &__item-text {
+    margin-top: 0;
+    margin-bottom: pxToRem(61);
+    font-size: 11px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 16.51px;
+    color: #5f5f5f;
+
+    @include for-tablet-landscape-down() {
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    &_first {
+      margin-bottom: pxToRem(18);
+    }
+
+    &_second {
+      margin-bottom: pxToRem(25);
+    }
+  }
+
+  &__item-link {
+    position: relative;
+    z-index: 1;
+    font-size: 11px;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 27.28px;
+    color: #1d75b7;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

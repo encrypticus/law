@@ -7,3 +7,4 @@ import '../../components/contact/contact';
 import '../../components/burger/burger';
 import '../../blocks/faq-sub-header/faq-sub-header';
 import '../../blocks/who-we-are/who-we-are';
+import '../../blocks/services/services';
