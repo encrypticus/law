@@ -79,6 +79,10 @@
       border: 0;
     }
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &_first {
       padding-left: 0;
     }

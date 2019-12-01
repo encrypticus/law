@@ -21,5 +21,16 @@
     color: #f4762a;
     background-color: #fff;
     border: 1px solid #f4762a;
+    cursor: pointer;
+    transition: background-color, color .3s, .3s;
+
+    &:hover {
+      color: #fff;
+      background-color: #f4762a;
+    }
+
+    &:active {
+      background-color: darken(#f4762a, 5%);
+    }
   }
 }

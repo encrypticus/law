@@ -40,5 +40,9 @@
     color: #0d2e69;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

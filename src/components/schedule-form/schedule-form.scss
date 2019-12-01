@@ -63,5 +63,12 @@
     grid-area: submit;
     text-transform: uppercase;
     box-sizing: border-box;
+    transition: background-color, color .3s, .3s;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background-color: darken(#f4762a, 5%);
+    }
   }
 }

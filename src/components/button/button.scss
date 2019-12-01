@@ -19,6 +19,14 @@
     line-height: 19.21px;
     color: #fff;
     background-color: #0d2e69;
+
+    &:hover {
+      background-color: lighten(#0d2e69, 5%);
+    }
+
+    &:active {
+      background-color: darken(#0d2e69, 5%);
+    }
   }
 
   &_theme_white {
@@ -28,6 +36,10 @@
     line-height: 21.49px;
     color: #0d2e69;
     background-color: #fff;
+
+    &:hover {
+      background-color: darken(#fff, 5%);
+    }
   }
 
   &_about-us {

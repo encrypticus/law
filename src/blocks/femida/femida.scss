@@ -84,8 +84,18 @@
     font-family: 'Open Sans Semibold', Arial, sans-serif;
     line-height: 20.82px;
     color: #000;
+    background-color: #fff;
     border: 1px solid #000;
     box-sizing: border-box;
     text-decoration: none;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: darken(#fff, 5%);
+    }
+
+    &:active {
+      background-color: darken(#fff, 10%);
+    }
   }
 }
